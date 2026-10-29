@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termíny CDO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f2f4f8;--surface:#fff;--ink:#0f1b2d;--muted:#5b687c;--line:#d9dee7;
+  --event_date:#3a3fd1;--reg_open:#0b8f7a;--reg_close:#c81e5b;--presence_close:#b7620a;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Public Sans","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0c1220;--surface:#141c2e;--ink:#e8ecf4;--muted:#9aa7bd;--line:#26314a;
+  --event_date:#8c92ff;--reg_open:#3ccfb4;--reg_close:#ff6b9a;--presence_close:#f0a24a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.5 var(--body)}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--event_date);outline-offset:2px}
+header{max-width:1280px;margin:0 auto;padding:24px 20px 4px;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between}
+h1{font:700 32px/1.1 var(--display);margin:0;letter-spacing:-.02em}
+header p{margin:0;color:var(--muted);font-size:13px}
+header a{color:inherit}
+.app{max-width:1280px;margin:0 auto;padding:16px 20px 40px;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;align-items:start}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.filters{display:flex;flex-wrap:wrap;gap:6px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.tog{border:1px solid var(--line);background:transparent;border-radius:999px;padding:3px 11px;font-size:13px;display:inline-flex;align-items:center;gap:6px}
+.tog i{width:9px;height:9px;border-radius:50%;background:var(--c,var(--muted))}
+.tog[aria-pressed=false]{opacity:.45;text-decoration:line-through}
+.tog.d[aria-pressed=true]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.tog.d[aria-pressed=false]{opacity:1;text-decoration:none}
+.sep{flex:1}
+.bar{display:flex;align-items:center;gap:8px;padding:12px 14px}
+.bar h2{font:700 22px var(--display);margin:0;flex:1;text-transform:capitalize;letter-spacing:-.01em}
+.nav{border:1px solid var(--line);background:transparent;border-radius:8px;padding:4px 11px}
+.nav:hover{background:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border-top:1px solid var(--line)}
+.dow{padding:6px 8px;font-size:12px;color:var(--muted);border-bottom:1px solid var(--line)}
+.day{min-height:104px;padding:5px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);cursor:pointer;min-width:0}
+.day:nth-child(7n+7){border-right:0}
+.day.off{background:color-mix(in srgb,var(--bg) 60%,transparent)}
+.day.off .num{opacity:.45}
+.num{display:inline-block;font-size:13px;min-width:24px;height:24px;line-height:24px;text-align:center;border-radius:12px}
+.today .num{background:var(--ink);color:var(--surface);font-weight:600}
+.chip{display:block;width:100%;margin-top:3px;padding:2px 6px;text-align:left;font-size:12px;line-height:1.35;border:0;border-left:3px solid var(--c);border-radius:3px;background:color-mix(in srgb,var(--c) 13%,var(--surface));white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chip b{font-weight:600;color:var(--c)}
+.more{display:block;margin-top:3px;font-size:12px;color:var(--muted);padding-left:6px}
+aside h2{font:700 20px var(--display);margin:0;padding:14px 14px 4px;letter-spacing:-.01em}
+aside .sub{margin:0;padding:0 14px 10px;color:var(--muted);font-size:13px}
+.up{display:grid;grid-template-columns:62px 1fr;gap:10px;width:100%;text-align:left;padding:10px 14px;background:transparent;border:0;border-top:1px solid var(--line);border-left:4px solid var(--c)}
+.up:hover{background:var(--bg)}
+.left{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;color:var(--c)}
+.left b{font:700 28px/1 var(--display);letter-spacing:-.02em}
+.left b:only-child{font-size:20px}
+.left small{font-size:12px;color:var(--muted)}
+.what{display:flex;flex-direction:column;min-width:0}
+.what em{font-style:normal;font-size:12px;font-weight:600;color:var(--c)}
+.what strong{font-weight:500;line-height:1.3}
+.what small{color:var(--muted);font-size:13px}
+.empty{padding:22px 14px;color:var(--muted)}
+dialog{border:1px solid var(--line);border-radius:14px;padding:0;width:calc(100% - 32px);max-width:540px;background:var(--surface);color:var(--ink)}
+dialog::backdrop{background:rgba(8,12,24,.55)}
+.dlg{padding:20px 22px 22px}
+.dlg h3{font:700 24px/1.2 var(--display);margin:0 0 8px;letter-spacing:-.01em;padding-right:36px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.tag{font-size:12px;font-weight:600;border:1px solid var(--line);border-radius:6px;padding:1px 8px}
+.x{position:absolute;top:12px;right:12px;border:1px solid var(--line);background:transparent;border-radius:8px;width:32px;height:32px}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:0}
+dt,dd{margin:0;padding:9px 0;border-top:1px solid var(--line)}
+dt{color:var(--muted);padding-right:16px;display:flex;align-items:center;gap:8px}
+dt i{width:9px;height:9px;border-radius:50%;background:var(--c);flex:none}
+dd small{color:var(--muted);display:block}
+dd.none{color:var(--muted)}
+.link{display:inline-block;margin-top:14px;padding:8px 14px;border-radius:8px;background:var(--ink);color:var(--surface);text-decoration:none;font-weight:500}
+.list{display:flex;flex-direction:column}
+.list .up{border-left-width:4px}
+footer{max-width:1280px;margin:0 auto;padding:0 20px 28px;color:var(--muted);font-size:13px}
+@media (max-width:900px){
+  .app{grid-template-columns:1fr}
+  aside{order:-1}
+}
+@media (max-width:640px){
+  header{padding-top:16px}h1{font-size:26px}
+  .day{min-height:58px;padding:3px}
+  .chip{height:7px;width:7px;padding:0;border:0;border-radius:50%;background:var(--c);display:inline-block;margin:2px 2px 0 0;font-size:0}
+  .chip b{display:none}
+  .more{display:inline;padding:0}
+}
+@media (prefers-reduced-motion:no-preference){dialog[open]{animation:pop .16s ease-out}}
+@keyframes pop{from{transform:translateY(6px);opacity:0}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Termíny CDO</h1>
+  <p id="meta"></p>
+</header>
+<main class="app">
+  <section class="panel" aria-label="Kalendář">
+    <div class="filters" id="filters"></div>
+    <div class="bar">
+      <h2 id="title"></h2>
+      <button class="nav" id="prev" aria-label="Předchozí měsíc">‹</button>
+      <button class="nav" id="now">Dnes</button>
+      <button class="nav" id="next" aria-label="Další měsíc">›</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+  <aside class="panel" aria-label="Blížící se deadliny">
+    <h2>Blížící se deadliny</h2>
+    <p class="sub">Registrace a prezence v následujících 60 dnech</p>
+    <div class="list" id="upcoming"></div>
+  </aside>
+</main>
+<footer id="foot"></footer>
+<dialog id="dlg"></dialog>
+
+<script>
+(() => {
+const DATA = __DATA__;
+const T = {
+  event_date:{l:"Konání",s:"Konání"},
+  reg_open:{l:"Otevření registrace",s:"Reg. od"},
+  reg_close:{l:"Uzavření registrace",s:"Reg. do"},
+  presence_close:{l:"Uzavření prezence",s:"Prezence"}
+};
+const PRIORITY = ["reg_close","presence_close","reg_open","event_date"];
+const DOW = ["po","út","st","čt","pá","so","ne"];
+const pad = n => String(n).padStart(2,"0");
+const key = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const parse = iso => { const [y,m,d] = iso.slice(0,10).split("-").map(Number); return new Date(y,m-1,d); };
+const today = new Date(); today.setHours(0,0,0,0);
+const diff = d => Math.round((d - today) / 864e5);
+const fmt = iso => { const d = parse(iso); return `${DOW[(d.getDay()+6)%7]} ${d.getDate()}. ${d.getMonth()+1}. ${d.getFullYear()}` + (iso.length>10 ? " " + iso.slice(11,16) : ""); };
+const col = t => `--c:var(--${t})`;
+
+function el(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k,v] of Object.entries(attrs)) {
+    if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+    else if (v !== false && v != null) e.setAttribute(k, v === true ? "" : v);
+  }
+  for (const c of kids.flat()) if (c != null && c !== false) e.append(c);
+  return e;
+}
+const $ = id => document.getElementById(id);
+
+const items = [];
+for (const ev of DATA.events) for (const t of Object.keys(T)) if (ev[t]) items.push({ev, t, iso:ev[t], d:parse(ev[t])});
+
+const st = {month:new Date(today.getFullYear(), today.getMonth(), 1), types:new Set(Object.keys(T)), disc:new Set()};
+const allDisc = [...new Set(DATA.events.flatMap(e => e.disciplines))].sort();
+const visible = it => st.types.has(it.t) && (!st.disc.size || !it.ev.disciplines.length || it.ev.disciplines.some(d => st.disc.has(d)));
+
+function renderFilters() {
+  $("filters").replaceChildren(
+    ...Object.entries(T).map(([t,v]) => el("button", {class:"tog", style:col(t), "aria-pressed":st.types.has(t), onclick:() => { st.types.has(t) ? st.types.delete(t) : st.types.add(t); render(); }}, el("i"), v.l)),
+    el("span",{class:"sep"}),
+    ...allDisc.map(d => el("button", {class:"tog d", "aria-pressed":st.disc.has(d), onclick:() => { st.disc.has(d) ? st.disc.delete(d) : st.disc.add(d); render(); }}, d))
+  );
+}
+
+function chip(it) {
+  return el("button", {class:"chip", style:col(it.t), title:`${T[it.t].l}: ${it.ev.title}`, onclick:e => { e.stopPropagation(); openEvent(it.ev); }},
+    el("b",{}, T[it.t].s), " ", it.ev.title);
+}
+
+function renderCal() {
+  const m = st.month;
+  $("title").textContent = m.toLocaleDateString("cs-CZ", {month:"long", year:"numeric"});
+  const first = new Date(m.getFullYear(), m.getMonth(), 1);
+  const offset = (first.getDay()+6) % 7;
+  const weeks = Math.ceil((offset + new Date(m.getFullYear(), m.getMonth()+1, 0).getDate()) / 7);
+  const start = new Date(first); start.setDate(1 - offset);
+  const by = {};
+  for (const it of items.filter(visible)) (by[key(it.d)] ||= []).push(it);
+  const cells = DOW.map(d => el("div", {class:"dow"}, d));
+  for (let i = 0; i < weeks*7; i++) {
+    const d = new Date(start); d.setDate(start.getDate()+i);
+    const list = (by[key(d)] || []).sort((a,b) => PRIORITY.indexOf(a.t) - PRIORITY.indexOf(b.t));
+    cells.push(el("div", {class:"day" + (d.getMonth()!==m.getMonth() ? " off":"") + (key(d)===key(today) ? " today":""), onclick:() => list.length && openDay(d, list)},
+      el("span",{class:"num"}, String(d.getDate())),
+      list.slice(0,3).map(chip),
+      list.length > 3 ? el("span",{class:"more"}, `+${list.length-3}`) : null));
+  }
+  $("grid").replaceChildren(...cells);
+}
+
+function when(n) { return n===0 ? [el("b",{},"dnes")] : n===1 ? [el("b",{},"zítra")] : [el("b",{},String(n)), el("small",{}, n<5 ? "dny" : "dní")]; }
+
+function row(it, withLeft = true) {
+  const n = diff(it.d);
+  return el("button", {class:"up", style:col(it.t), onclick:() => openEvent(it.ev)},
+    el("span",{class:"left"}, when(n)),
+    el("span",{class:"what"}, el("em",{}, T[it.t].l), el("strong",{}, it.ev.title), el("small",{}, fmt(it.iso))));
+}
+
+function renderUpcoming() {
+  const list = items.filter(it => it.t !== "event_date" && visible(it) && diff(it.d) >= 0 && diff(it.d) <= 60)
+    .sort((a,b) => a.iso.localeCompare(b.iso)).slice(0, 25);
+  $("upcoming").replaceChildren(...(list.length ? list.map(row) : [el("p",{class:"empty"}, "V nejbližších 60 dnech není žádný termín.")]));
+}
+
+const dlg = $("dlg");
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+const closeBtn = () => el("button", {class:"x", "aria-label":"Zavřít", onclick:() => dlg.close()}, "✕");
+
+function openDay(d, list) {
+  dlg.replaceChildren(el("div",{class:"dlg"}, closeBtn(),
+    el("h3",{}, d.toLocaleDateString("cs-CZ",{weekday:"long", day:"numeric", month:"long", year:"numeric"})),
+    el("div",{class:"list"}, list.map(it => el("button", {class:"up", style:col(it.t), onclick:() => openEvent(it.ev)},
+      el("span",{class:"left"}, el("small",{}, T[it.t].s)),
+      el("span",{class:"what"}, el("strong",{}, it.ev.title), el("small",{}, T[it.t].l)))))));
+  if (!dlg.open) dlg.showModal();
+}
+
+function openEvent(ev) {
+  const rows = Object.keys(T).filter(t => ev[t]).sort((a,b) => ev[a].localeCompare(ev[b]))
+    .concat(Object.keys(T).filter(t => !ev[t]));
+  const dl = el("dl", {}, rows.flatMap(t => {
+    if (!ev[t]) return [el("dt",{style:col(t)}, el("i"), T[t].l), el("dd",{class:"none"}, "neuvedeno")];
+    const n = diff(parse(ev[t]));
+    return [el("dt",{style:col(t)}, el("i"), T[t].l),
+            el("dd",{}, fmt(ev[t]), el("small",{}, n < 0 ? "již proběhlo" : n === 0 ? "dnes" : n === 1 ? "zítra" : `za ${n} ${n<5?"dny":"dní"}`))];
+  }));
+  const where = [ev.place, ev.region].filter(Boolean).join(", ");
+  dlg.replaceChildren(el("div",{class:"dlg"}, closeBtn(),
+    el("h3",{}, ev.title),
+    el("div",{class:"tags"}, ev.disciplines.map(d => el("span",{class:"tag"}, d)), ev.kind==="skoleni" ? el("span",{class:"tag"},"Školení trenérů") : null,
+       ev.kind==="mcr" ? el("span",{class:"tag"},"MČR") : null, ev.kind==="mc" ? el("span",{class:"tag"},"Mistrovství Čech") : null),
+    dl,
+    where ? el("p",{}, "📍 " + where) : null,
+    ev.url ? el("a",{class:"link", href:ev.url, target:"_blank", rel:"noopener"}, "Otevřít na webu CDO") : null));
+  if (!dlg.open) dlg.showModal();
+}
+
+function render() { renderFilters(); renderCal(); renderUpcoming(); }
+$("prev").onclick = () => { st.month = new Date(st.month.getFullYear(), st.month.getMonth()-1, 1); renderCal(); };
+$("next").onclick = () => { st.month = new Date(st.month.getFullYear(), st.month.getMonth()+1, 1); renderCal(); };
+$("now").onclick = () => { st.month = new Date(today.getFullYear(), today.getMonth(), 1); renderCal(); };
+
+$("meta").append(`Aktualizováno ${DATA.generated_at} · `, el("a",{href:"cdo.ics"},"kalendář (.ics)"));
+$("foot").append("Zdroj: ", el("a",{href:DATA.calendar_url, rel:"noopener"}, "kalendář CDO"), ". Termíny vždy ověřte v propozicích soutěže.");
+if (!DATA.events.length) $("upcoming").append(el("p",{class:"empty"},"Zatím tu nejsou žádné soutěže."));
+render();
+})();
+</script>
+</body>
+</html>
