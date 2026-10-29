@@ -1,0 +1,83 @@
+name: CDO hlídač termínů
+
+on:
+  schedule:
+    - cron: "15 5 * * *"        # každý den 05:15 UTC = 06:15 (zima) / 07:15 (léto) v ČR
+  workflow_dispatch:             # ruční spuštění tlačítkem
+    inputs:
+      debug:
+        description: "Uložit ladicí soubory (HTML, JSON, screenshot)"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Neposílat WhatsApp, jen vypsat zprávu"
+        type: boolean
+        default: false
+      test_whatsapp:
+        description: "Poslat jen zkušební WhatsApp zprávu"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write                # robot ukládá aktualizovaný web a stav zpět do repozitáře
+
+concurrency:
+  group: cdo-watcher
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalace knihoven
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Zkušební WhatsApp
+        if: ${{ inputs.test_whatsapp }}
+        env:
+          WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
+          WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+        run: python main.py --test-whatsapp
+
+      - name: Kontrola kalendáře CDO
+        if: ${{ !inputs.test_whatsapp }}
+        env:
+          WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
+          WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.debug }}" = "true" ]; then ARGS="$ARGS --debug"; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          python main.py $ARGS
+
+      - name: Uložení ladicích souborů
+        if: ${{ always() && !inputs.test_whatsapp }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug
+          path: debug/
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Uložení výsledků do repozitáře
+        if: ${{ success() && !inputs.test_whatsapp && !inputs.dry_run }}
+        run: |
+          git config user.name "cdo-bot"
+          git config user.email "cdo-bot@users.noreply.github.com"
+          git add docs data
+          if git diff --cached --quiet; then
+            echo "Beze změn."
+          else
+            git commit -m "Aktualizace termínů $(date -u +%F)"
+            git push
+          fi
