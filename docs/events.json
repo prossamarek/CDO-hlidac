@@ -1,0 +1,119 @@
+{
+ "generated_at": "30. 10. 2026 06:58",
+ "calendar_url": "https://dcs.czechdance.org/calendar",
+ "events": [
+  {
+   "id": "08419ad8ee",
+   "title": "CDM – HH – ČECHY /3/ + DD – ZL ČECHY /4/ + kval. POPPING",
+   "url": "",
+   "event_date": "2026-11-07",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null,
+   "region": "",
+   "place": "SPORT PARK Liberec – Home Credit Arena, HALA MÍČOVÝCH SPORTŮ",
+   "info": "date: 2026-11-07 venue: SPORT PARK Liberec – Home Credit Arena, HALA MÍČOVÝCH SPORTŮ registrationSince: 2026-10-26T07:00:00.000+00:00 registrationTill: 2026-10-30T14:00:00.000+00:00 attendanceTill: 2026-11-05T14:00:00.000+00:00 name: CDM – HH – ČECHY /3/ + DD – ZL ČECHY /4/ + kval. POPPING id: 698",
+   "kind": "soutez",
+   "disciplines": [
+    "HH",
+    "DD"
+   ]
+  },
+  {
+   "id": "119108e3ab",
+   "title": "POHÁR – ART formace, dua - ČR",
+   "url": "",
+   "event_date": "2026-11-15",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null,
+   "region": "",
+   "place": "SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9",
+   "info": "date: 2026-11-15 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 registrationSince: 2026-10-29T15:00:00.000+00:00 registrationTill: 2026-11-03T14:00:00.000+00:00 attendanceTill: 2026-11-06T14:00:00.000+00:00 name: POHÁR – ART formace, dua - ČR id: 770",
+   "kind": "soutez",
+   "disciplines": [
+    "ART"
+   ]
+  },
+  {
+   "id": "1ca133ca15",
+   "title": "POHÁR – HIP HOP, STREET BATTLE sóla, dua, malé skupiny – ČR",
+   "url": "",
+   "event_date": "2026-11-15",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null,
+   "region": "",
+   "place": "SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9",
+   "info": "date: 2026-11-15 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 registrationSince: 2026-09-30T06:00:00.000+00:00 registrationTill: 2026-11-06T14:00:00.000+00:00 attendanceTill: 2026-11-12T14:00:00.000+00:00 name: POHÁR – HIP HOP, STREET BATTLE sóla, dua, malé skupiny – ČR id: 761",
+   "kind": "soutez",
+   "disciplines": [
+    "HH"
+   ]
+  },
+  {
+   "id": "6b64ff73d1",
+   "title": "IDO - WORLD MODERN & CONTEMPORARY CHAMPIONSHIPS",
+   "url": "",
+   "event_date": "2026-11-21",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null,
+   "region": "",
+   "place": "Podcetrtek, Slovenia",
+   "info": "date: 2026-11-21 venue: Podcetrtek, Slovenia registrationSince: 2026-08-03T06:00:00.000+00:00 registrationTill: 2026-09-15T13:00:00.000+00:00 attendanceTill: 2026-11-25T22:00:00.000+00:00 dateTill: 2026-11-25 name: IDO - WORLD MODERN & CONTEMPORARY CHAMPIONSHIPS id: 682",
+   "kind": "soutez",
+   "disciplines": [
+    "ART"
+   ]
+  },
+  {
+   "id": "a7b923404c",
+   "title": "CDM – DD – EX /3/ + ZL ČECHY /5/ + MČR DDFS",
+   "url": "",
+   "event_date": "2026-11-28",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null,
+   "region": "",
+   "place": "Sportovní hala, Mánesova 4980, Chomutov",
+   "info": "date: 2026-11-28 venue: Sportovní hala, Mánesova 4980, Chomutov registrationSince: 2026-11-16T07:00:00.000+00:00 registrationTill: 2026-11-20T14:00:00.000+00:00 attendanceTill: 2026-11-26T14:00:00.000+00:00 name: CDM – DD – EX /3/ + ZL ČECHY /5/ + MČR DDFS id: 704",
+   "kind": "mcr",
+   "disciplines": [
+    "DD"
+   ]
+  },
+  {
+   "id": "1fc1a2acbd",
+   "title": "CDM – MISTROVSTVÍ ČR HIP HOP + POPPING",
+   "url": "",
+   "event_date": "2026-12-05",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null,
+   "region": "",
+   "place": "Sportovní hale Kbely, Toužimská 732, Praha 9",
+   "info": "date: 2026-12-05 venue: Sportovní hale Kbely, Toužimská 732, Praha 9 registrationTill: 2026-11-27T14:00:00.000+00:00 attendanceTill: 2026-12-03T14:00:00.000+00:00 name: CDM – MISTROVSTVÍ ČR HIP HOP + POPPING id: 708",
+   "kind": "mcr",
+   "disciplines": [
+    "HH"
+   ]
+  },
+  {
+   "id": "667366dfda",
+   "title": "CDM – HOBBY HIP HOP pohár",
+   "url": "",
+   "event_date": "2026-12-06",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null,
+   "region": "",
+   "place": "Sportovní hala Kbely, Toužimská 732, Praha 9",
+   "info": "date: 2026-12-06 venue: Sportovní hala Kbely, Toužimská 732, Praha 9 registrationTill: 2026-11-27T14:00:00.000+00:00 attendanceTill: 2026-12-03T14:00:00.000+00:00 name: CDM – HOBBY HIP HOP pohár id: 709",
+   "kind": "soutez",
+   "disciplines": [
+    "HH"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "seen": {
+  "08419ad8ee": {
+   "event_date": "2026-11-07",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null
+  },
+  "119108e3ab": {
+   "event_date": "2026-11-15",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null
+  },
+  "1ca133ca15": {
+   "event_date": "2026-11-15",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null
+  },
+  "6b64ff73d1": {
+   "event_date": "2026-11-21",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null
+  },
+  "a7b923404c": {
+   "event_date": "2026-11-28",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null
+  },
+  "1fc1a2acbd": {
+   "event_date": "2026-12-05",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null
+  },
+  "667366dfda": {
+   "event_date": "2026-12-06",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null
+  }
+ },
+ "sent": {},
+ "last_run": "2026-10-30T06:58:10+01:00"
+}
