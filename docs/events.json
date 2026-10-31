@@ -1,5 +1,5 @@
 {
- "generated_at": "30. 10. 2026 06:58",
+ "generated_at": "31. 10. 2026 06:53",
  "calendar_url": "https://dcs.czechdance.org/calendar",
  "events": [
   {
@@ -45,7 +45,7 @@
    "presence_close": null,
    "region": "",
    "place": "SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9",
-   "info": "date: 2026-11-15 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 registrationSince: 2026-09-30T06:00:00.000+00:00 registrationTill: 2026-11-06T14:00:00.000+00:00 attendanceTill: 2026-11-12T14:00:00.000+00:00 name: POHÁR – HIP HOP, STREET BATTLE sóla, dua, malé skupiny – ČR id: 761",
+   "info": "date: 2026-11-15 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 registrationSince: 2026-09-30T06:00:00.000+00:00 registrationTill: 2026-11-03T14:00:00.000+00:00 attendanceTill: 2026-11-06T14:00:00.000+00:00 name: POHÁR – HIP HOP, STREET BATTLE sóla, dua, malé skupiny – ČR id: 761",
    "kind": "soutez",
    "disciplines": [
     "HH"
@@ -79,6 +79,22 @@
    "place": "Sportovní hala, Mánesova 4980, Chomutov",
    "info": "date: 2026-11-28 venue: Sportovní hala, Mánesova 4980, Chomutov registrationSince: 2026-11-16T07:00:00.000+00:00 registrationTill: 2026-11-20T14:00:00.000+00:00 attendanceTill: 2026-11-26T14:00:00.000+00:00 name: CDM – DD – EX /3/ + ZL ČECHY /5/ + MČR DDFS id: 704",
    "kind": "mcr",
+   "disciplines": [
+    "DD"
+   ]
+  },
+  {
+   "id": "6969b9bd03",
+   "title": "POHÁR – DISCO formace – meziklubová – TS D.A.R. – TS D.A.R., Chýně",
+   "url": "",
+   "event_date": "2026-11-29",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null,
+   "region": "",
+   "place": "Sportovní Hala Folimanka, Na Folimance 2, Praha 2",
+   "info": "date: 2026-11-29 venue: Sportovní Hala Folimanka, Na Folimance 2, Praha 2 registrationSince: 2026-11-02T07:00:00.000+00:00 registrationTill: 2026-11-20T14:00:00.000+00:00 attendanceTill: 2026-11-26T14:00:00.000+00:00 name: POHÁR – DISCO formace – meziklubová – TS D.A.R. – TS D.A.R., Chýně id: 773",
+   "kind": "soutez",
    "disciplines": [
     "DD"
    ]
