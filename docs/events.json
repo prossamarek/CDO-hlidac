@@ -1,5 +1,5 @@
 {
- "generated_at": "31. 10. 2026 06:53",
+ "generated_at": "1. 11. 2026 06:57",
  "calendar_url": "https://dcs.czechdance.org/calendar",
  "events": [
   {
@@ -129,6 +129,39 @@
    "kind": "soutez",
    "disciplines": [
     "HH"
+   ]
+  },
+  {
+   "id": "7aa7f8f7be",
+   "title": "CDM – MISTROVSTVÍ ČR DISCO DANCE SÓLO, MS + DUO MINI, DVK",
+   "url": "",
+   "event_date": "2026-12-12",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null,
+   "region": "",
+   "place": "Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem",
+   "info": "date: 2026-12-12 venue: Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem registrationTill: 2026-12-04T00:00:00.000+00:00 attendanceTill: 2026-12-10T00:00:00.000+00:00 name: CDM – MISTROVSTVÍ ČR DISCO DANCE SÓLO, MS + DUO MINI, DVK id: 711",
+   "kind": "mcr",
+   "disciplines": [
+    "DD"
+   ]
+  },
+  {
+   "id": "0ed04ae6bd",
+   "title": "CDM – MISTROVSTVÍ ČR DISCO DANCE DUO JVK, HVK + DISCO SLOW /3/ + ART /3/",
+   "url": "",
+   "event_date": "2026-12-13",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null,
+   "region": "",
+   "place": "Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem",
+   "info": "date: 2026-12-13 venue: Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem registrationTill: 2026-12-04T00:00:00.000+00:00 attendanceTill: 2026-12-10T00:00:00.000+00:00 name: CDM – MISTROVSTVÍ ČR DISCO DANCE DUO JVK, HVK + DISCO SLOW /3/ + ART /3/ id: 712",
+   "kind": "mcr",
+   "disciplines": [
+    "DD",
+    "ART"
    ]
   }
  ]
