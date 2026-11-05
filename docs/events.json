@@ -1,5 +1,5 @@
 {
- "generated_at": "4. 11. 2026 07:13",
+ "generated_at": "5. 11. 2026 07:14",
  "calendar_url": "https://dcs.czechdance.org/calendar",
  "events": [
   {
@@ -29,7 +29,7 @@
    "presence_close": null,
    "region": "",
    "place": "SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9",
-   "info": "date: 2026-11-15 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 registrationSince: 2026-10-29T15:00:00.000+00:00 registrationTill: 2026-11-03T14:00:00.000+00:00 attendanceTill: 2026-11-06T14:00:00.000+00:00 name: POHÁR – ART formace, dua - ČR id: 770",
+   "info": "date: 2026-11-15 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 registrationSince: 2026-10-29T15:00:00.000+00:00 registrationTill: 2026-11-03T14:00:00.000+00:00 attendanceTill: 2026-11-10T14:00:00.000+00:00 name: POHÁR – ART formace, dua - ČR id: 770",
    "kind": "soutez",
    "disciplines": [
     "ART"
@@ -45,7 +45,7 @@
    "presence_close": null,
    "region": "",
    "place": "SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9",
-   "info": "date: 2026-11-15 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 registrationSince: 2026-09-30T06:00:00.000+00:00 registrationTill: 2026-11-03T14:00:00.000+00:00 attendanceTill: 2026-11-06T14:00:00.000+00:00 name: POHÁR – HIP HOP, STREET BATTLE sóla, dua, malé skupiny – ČR id: 761",
+   "info": "date: 2026-11-15 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 registrationSince: 2026-09-30T06:00:00.000+00:00 registrationTill: 2026-11-03T14:00:00.000+00:00 attendanceTill: 2026-11-10T14:00:00.000+00:00 name: POHÁR – HIP HOP, STREET BATTLE sóla, dua, malé skupiny – ČR id: 761",
    "kind": "soutez",
    "disciplines": [
     "HH"
