@@ -1,5 +1,5 @@
 {
- "generated_at": "5. 11. 2026 07:14",
+ "generated_at": "6. 11. 2026 07:13",
  "calendar_url": "https://dcs.czechdance.org/calendar",
  "events": [
   {
@@ -109,7 +109,7 @@
    "presence_close": null,
    "region": "",
    "place": "Sportovní hale Kbely, Toužimská 732, Praha 9",
-   "info": "date: 2026-12-05 venue: Sportovní hale Kbely, Toužimská 732, Praha 9 registrationTill: 2026-11-27T14:00:00.000+00:00 attendanceTill: 2026-12-03T14:00:00.000+00:00 name: CDM – MISTROVSTVÍ ČR HIP HOP + POPPING id: 708",
+   "info": "date: 2026-12-05 venue: Sportovní hale Kbely, Toužimská 732, Praha 9 registrationSince: 2026-11-24T07:00:00.000+00:00 registrationTill: 2026-11-27T14:00:00.000+00:00 attendanceTill: 2026-12-03T14:00:00.000+00:00 name: CDM – MISTROVSTVÍ ČR HIP HOP + POPPING id: 708",
    "kind": "mcr",
    "disciplines": [
     "HH"
@@ -125,7 +125,7 @@
    "presence_close": null,
    "region": "",
    "place": "Sportovní hala Kbely, Toužimská 732, Praha 9",
-   "info": "date: 2026-12-06 venue: Sportovní hala Kbely, Toužimská 732, Praha 9 registrationTill: 2026-11-27T14:00:00.000+00:00 attendanceTill: 2026-12-03T14:00:00.000+00:00 name: CDM – HOBBY HIP HOP pohár id: 709",
+   "info": "date: 2026-12-06 venue: Sportovní hala Kbely, Toužimská 732, Praha 9 registrationSince: 2026-11-24T07:00:00.000+00:00 registrationTill: 2026-11-27T14:00:00.000+00:00 attendanceTill: 2026-12-03T14:00:00.000+00:00 name: CDM – HOBBY HIP HOP pohár id: 709",
    "kind": "soutez",
    "disciplines": [
     "HH"
@@ -141,7 +141,7 @@
    "presence_close": null,
    "region": "",
    "place": "Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem",
-   "info": "date: 2026-12-12 venue: Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem registrationTill: 2026-12-04T00:00:00.000+00:00 attendanceTill: 2026-12-10T00:00:00.000+00:00 name: CDM – MISTROVSTVÍ ČR DISCO DANCE SÓLO, MS + DUO MINI, DVK id: 711",
+   "info": "date: 2026-12-12 venue: Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem registrationSince: 2026-12-02T07:00:00.000+00:00 registrationTill: 2026-12-04T00:00:00.000+00:00 attendanceTill: 2026-12-10T00:00:00.000+00:00 name: CDM – MISTROVSTVÍ ČR DISCO DANCE SÓLO, MS + DUO MINI, DVK id: 711",
    "kind": "mcr",
    "disciplines": [
     "DD"
