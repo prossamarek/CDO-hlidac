@@ -1,24 +1,7 @@
 {
- "generated_at": "7. 11. 2026 06:59",
+ "generated_at": "8. 11. 2026 07:00",
  "calendar_url": "https://dcs.czechdance.org/calendar",
  "events": [
-  {
-   "id": "08419ad8ee",
-   "title": "CDM – HH – ČECHY /3/ + DD – ZL ČECHY /4/ + kval. POPPING",
-   "url": "",
-   "event_date": "2026-11-07",
-   "reg_open": null,
-   "reg_close": null,
-   "presence_close": null,
-   "region": "",
-   "place": "SPORT PARK Liberec – Home Credit Arena, HALA MÍČOVÝCH SPORTŮ",
-   "info": "date: 2026-11-07 venue: SPORT PARK Liberec – Home Credit Arena, HALA MÍČOVÝCH SPORTŮ registrationSince: 2026-10-26T07:00:00.000+00:00 registrationTill: 2026-10-30T14:00:00.000+00:00 attendanceTill: 2026-11-05T14:00:00.000+00:00 name: CDM – HH – ČECHY /3/ + DD – ZL ČECHY /4/ + kval. POPPING id: 698",
-   "kind": "soutez",
-   "disciplines": [
-    "HH",
-    "DD"
-   ]
-  },
   {
    "id": "119108e3ab",
    "title": "POHÁR – ART formace, dua - ČR",
