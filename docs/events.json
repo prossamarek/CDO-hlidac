@@ -1,5 +1,5 @@
 {
- "generated_at": "11. 11. 2026 07:13",
+ "generated_at": "12. 11. 2026 07:17",
  "calendar_url": "https://dcs.czechdance.org/calendar",
  "events": [
   {
@@ -12,7 +12,7 @@
    "presence_close": null,
    "region": "",
    "place": "SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9",
-   "info": "date: 2026-11-15 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 registrationSince: 2026-10-29T15:00:00.000+00:00 registrationTill: 2026-11-03T14:00:00.000+00:00 attendanceTill: 2026-11-10T14:00:00.000+00:00 name: POHÁR – ART formace, dua - ČR id: 770",
+   "info": "date: 2026-11-15 registrationSince: 2026-10-29T15:00:00.000+00:00 registrationTill: 2026-11-03T14:00:00.000+00:00 attendanceTill: 2026-11-10T14:00:00.000+00:00 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 name: POHÁR – ART formace, dua - ČR id: 770",
    "kind": "soutez",
    "disciplines": [
     "ART"
@@ -28,7 +28,7 @@
    "presence_close": null,
    "region": "",
    "place": "SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9",
-   "info": "date: 2026-11-15 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 registrationSince: 2026-09-30T06:00:00.000+00:00 registrationTill: 2026-11-03T14:00:00.000+00:00 attendanceTill: 2026-11-10T14:00:00.000+00:00 name: POHÁR – HIP HOP, STREET BATTLE sóla, dua, malé skupiny – ČR id: 761",
+   "info": "date: 2026-11-15 registrationSince: 2026-09-30T06:00:00.000+00:00 registrationTill: 2026-11-03T14:00:00.000+00:00 attendanceTill: 2026-11-10T14:00:00.000+00:00 venue: SPORTOVNÍ HALA KBELY, Toužimská 732/24i, Praha 9 name: POHÁR – HIP HOP, STREET BATTLE sóla, dua, malé skupiny – ČR id: 761",
    "kind": "soutez",
    "disciplines": [
     "HH"
@@ -44,7 +44,7 @@
    "presence_close": null,
    "region": "",
    "place": "Podcetrtek, Slovenia",
-   "info": "date: 2026-11-21 venue: Podcetrtek, Slovenia registrationSince: 2026-08-03T06:00:00.000+00:00 registrationTill: 2026-09-15T13:00:00.000+00:00 attendanceTill: 2026-11-25T22:00:00.000+00:00 dateTill: 2026-11-25 name: IDO - WORLD MODERN & CONTEMPORARY CHAMPIONSHIPS id: 682",
+   "info": "date: 2026-11-21 registrationSince: 2026-08-03T06:00:00.000+00:00 registrationTill: 2026-09-15T13:00:00.000+00:00 attendanceTill: 2026-11-25T22:00:00.000+00:00 dateTill: 2026-11-25 venue: Podcetrtek, Slovenia name: IDO - WORLD MODERN & CONTEMPORARY CHAMPIONSHIPS id: 682",
    "kind": "soutez",
    "disciplines": [
     "ART"
@@ -60,7 +60,7 @@
    "presence_close": null,
    "region": "",
    "place": "Sportovní hala, Mánesova 4980, Chomutov",
-   "info": "date: 2026-11-28 venue: Sportovní hala, Mánesova 4980, Chomutov registrationSince: 2026-11-16T07:00:00.000+00:00 registrationTill: 2026-11-20T14:00:00.000+00:00 attendanceTill: 2026-11-26T14:00:00.000+00:00 name: CDM – DD – EX /3/ + ZL ČECHY /5/ + MČR DDFS id: 704",
+   "info": "date: 2026-11-28 registrationSince: 2026-11-16T07:00:00.000+00:00 registrationTill: 2026-11-20T14:00:00.000+00:00 attendanceTill: 2026-11-26T14:00:00.000+00:00 venue: Sportovní hala, Mánesova 4980, Chomutov name: CDM – DD – EX /3/ + ZL ČECHY /5/ + MČR DDFS id: 704",
    "kind": "mcr",
    "disciplines": [
     "DD"
@@ -76,7 +76,7 @@
    "presence_close": null,
    "region": "",
    "place": "Sportovní Hala Folimanka, Na Folimance 2, Praha 2",
-   "info": "date: 2026-11-29 venue: Sportovní Hala Folimanka, Na Folimance 2, Praha 2 registrationSince: 2026-11-02T07:00:00.000+00:00 registrationTill: 2026-11-20T14:00:00.000+00:00 attendanceTill: 2026-11-26T14:00:00.000+00:00 name: POHÁR – DISCO formace – meziklubová – TS D.A.R. – TS D.A.R., Chýně id: 773",
+   "info": "date: 2026-11-29 registrationSince: 2026-11-02T07:00:00.000+00:00 registrationTill: 2026-11-20T14:00:00.000+00:00 attendanceTill: 2026-11-26T14:00:00.000+00:00 venue: Sportovní Hala Folimanka, Na Folimance 2, Praha 2 name: POHÁR – DISCO formace – meziklubová – TS D.A.R. – TS D.A.R., Chýně id: 773",
    "kind": "soutez",
    "disciplines": [
     "DD"
@@ -92,7 +92,7 @@
    "presence_close": null,
    "region": "",
    "place": "Sportovní hale Kbely, Toužimská 732, Praha 9",
-   "info": "date: 2026-12-05 venue: Sportovní hale Kbely, Toužimská 732, Praha 9 registrationSince: 2026-11-24T07:00:00.000+00:00 registrationTill: 2026-11-27T14:00:00.000+00:00 attendanceTill: 2026-12-03T14:00:00.000+00:00 name: CDM – MISTROVSTVÍ ČR HIP HOP + POPPING id: 708",
+   "info": "date: 2026-12-05 registrationSince: 2026-11-24T07:00:00.000+00:00 registrationTill: 2026-11-27T14:00:00.000+00:00 attendanceTill: 2026-12-03T14:00:00.000+00:00 venue: Sportovní hale Kbely, Toužimská 732, Praha 9 name: CDM – MISTROVSTVÍ ČR HIP HOP + POPPING id: 708",
    "kind": "mcr",
    "disciplines": [
     "HH"
@@ -108,7 +108,7 @@
    "presence_close": null,
    "region": "",
    "place": "Sportovní hala Kbely, Toužimská 732, Praha 9",
-   "info": "date: 2026-12-06 venue: Sportovní hala Kbely, Toužimská 732, Praha 9 registrationSince: 2026-11-24T07:00:00.000+00:00 registrationTill: 2026-11-27T14:00:00.000+00:00 attendanceTill: 2026-12-03T14:00:00.000+00:00 name: CDM – HOBBY HIP HOP pohár id: 709",
+   "info": "date: 2026-12-06 registrationSince: 2026-11-24T07:00:00.000+00:00 registrationTill: 2026-11-27T14:00:00.000+00:00 attendanceTill: 2026-12-03T14:00:00.000+00:00 venue: Sportovní hala Kbely, Toužimská 732, Praha 9 name: CDM – HOBBY HIP HOP pohár id: 709",
    "kind": "soutez",
    "disciplines": [
     "HH"
@@ -124,7 +124,7 @@
    "presence_close": null,
    "region": "",
    "place": "Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem",
-   "info": "date: 2026-12-12 venue: Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem registrationSince: 2026-12-02T07:00:00.000+00:00 registrationTill: 2026-12-04T00:00:00.000+00:00 attendanceTill: 2026-12-10T00:00:00.000+00:00 name: CDM – MISTROVSTVÍ ČR DISCO DANCE - SÓLO, MS + DUO MINI, DVK id: 711",
+   "info": "date: 2026-12-12 registrationSince: 2026-12-02T07:00:00.000+00:00 registrationTill: 2026-12-04T00:00:00.000+00:00 attendanceTill: 2026-12-10T00:00:00.000+00:00 venue: Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem name: CDM – MISTROVSTVÍ ČR DISCO DANCE - SÓLO, MS + DUO MINI, DVK id: 711",
    "kind": "mcr",
    "disciplines": [
     "DD"
@@ -140,7 +140,7 @@
    "presence_close": null,
    "region": "",
    "place": "Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem",
-   "info": "date: 2026-12-13 venue: Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem registrationSince: 2026-11-16T07:00:00.000+00:00 registrationTill: 2026-12-04T14:00:00.000+00:00 attendanceTill: 2026-12-10T14:00:00.000+00:00 name: CDM – ART /3/ + DISCO SLOW /3/ id: 712",
+   "info": "date: 2026-12-13 registrationSince: 2026-11-16T07:00:00.000+00:00 registrationTill: 2026-12-04T14:00:00.000+00:00 attendanceTill: 2026-12-10T14:00:00.000+00:00 venue: Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem name: CDM – ART /3/ + DISCO SLOW /3/ id: 712",
    "kind": "soutez",
    "disciplines": [
     "DD",
@@ -157,7 +157,7 @@
    "presence_close": null,
    "region": "",
    "place": "Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem",
-   "info": "date: 2026-12-13 venue: Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem registrationSince: 2026-12-02T07:00:00.000+00:00 registrationTill: 2026-12-04T14:00:00.000+00:00 attendanceTill: 2026-12-10T14:00:00.000+00:00 name: CDM – MISTROVSTVÍ ČR DISCO DANCE - DUO JVK, HVK id: 776",
+   "info": "date: 2026-12-13 registrationSince: 2026-12-02T07:00:00.000+00:00 registrationTill: 2026-12-04T14:00:00.000+00:00 attendanceTill: 2026-12-10T14:00:00.000+00:00 venue: Sportcentrum SLUNETA, Jateční 1026, Klíše, 400 01 Ústí nad Labem name: CDM – MISTROVSTVÍ ČR DISCO DANCE - DUO JVK, HVK id: 776",
    "kind": "mcr",
    "disciplines": [
     "DD"
