@@ -1,5 +1,5 @@
 {
- "generated_at": "16. 11. 2026 07:41",
+ "generated_at": "17. 11. 2026 07:15",
  "calendar_url": "https://dcs.czechdance.org/calendar",
  "events": [
   {
@@ -78,6 +78,22 @@
    "place": "Sportovní hala Kbely, Toužimská 732, Praha 9",
    "info": "date: 2026-12-06 registrationSince: 2026-11-24T07:00:00.000+00:00 registrationTill: 2026-11-27T14:00:00.000+00:00 attendanceTill: 2026-12-03T14:00:00.000+00:00 venue: Sportovní hala Kbely, Toužimská 732, Praha 9 name: CDM – HOBBY HIP HOP pohár id: 709",
    "kind": "soutez",
+   "disciplines": [
+    "HH"
+   ]
+  },
+  {
+   "id": "f0951c5e24",
+   "title": "WORKSHOP - MČR HIP HOP",
+   "url": "",
+   "event_date": "2026-12-06",
+   "reg_open": null,
+   "reg_close": null,
+   "presence_close": null,
+   "region": "",
+   "place": "Sportovní hale Kbely, Toužimská 732, Praha 9",
+   "info": "date: 2026-12-06 registrationSince: 2026-11-24T07:00:00.000+00:00 registrationTill: 2026-12-03T14:00:00.000+00:00 attendanceTill: 2026-12-06T22:00:00.000+00:00 venue: Sportovní hale Kbely, Toužimská 732, Praha 9 name: WORKSHOP - MČR HIP HOP id: 777",
+   "kind": "mcr",
    "disciplines": [
     "HH"
    ]
